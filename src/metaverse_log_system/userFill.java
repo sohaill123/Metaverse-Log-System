@@ -162,7 +162,7 @@ public class userFill extends javax.swing.JFrame {
             st.executeUpdate("insert into log(id,name,date,time) values('"+id+"','"+name+"',current_date(),current_time())");
              JOptionPane.showMessageDialog(null, "Data updated Successfully");
              setVisible(false);
-             new userFill().setVisible(true);
+             new metaverseHome().setVisible(true);
         }
         catch(Exception e){
             JOptionPane.showMessageDialog(null, ""+e.toString()+"");
